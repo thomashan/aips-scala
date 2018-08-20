@@ -1,6 +1,10 @@
 # aips-scala
 
 ## Run
+The \[input.txt\] is expected to be in the project root.
+```
+./gradlew run --args [input.txt]
+```
 
 ## Assumptions
 * clean input (i.e. ISO 8601 followed by space followed by car count)
