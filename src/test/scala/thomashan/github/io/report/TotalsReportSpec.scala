@@ -4,7 +4,7 @@ class TotalsReportSpec extends ReportSpec {
   "TotalsReport" can {
     "output" should {
       "return correct totals" in {
-        assert(new TotalsReport().output(entries) == 398)
+        assert(new TotalsReport(entries).output() == 398)
       }
     }
   }

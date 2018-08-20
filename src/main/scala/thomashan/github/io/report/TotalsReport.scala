@@ -1,9 +1,9 @@
 package thomashan.github.io.report
 
-import thomashan.github.io.{LineEntry, Report}
+import thomashan.github.io.LineEntry
 
-class TotalsReport extends Report[Long] {
-  override def output(entries: Seq[LineEntry]): Long = entries
+class TotalsReport(entries: Seq[LineEntry]) extends Report[Long] {
+  override def output(): Long = entries
     .map(e ⇒ e.count)
     .sum
 }

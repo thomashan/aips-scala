@@ -6,7 +6,7 @@ class DailyTotalsReportSpec extends ReportSpec {
   "DailyTotalsReport" can {
     "output" should {
       "return correct count for each day" in {
-        val dailyTotals = new DailyTotalsReport().output(entries)
+        val dailyTotals = new DailyTotalsReport(entries).output()
         assert(dailyTotals.size == 4)
         assert(dailyTotals(LocalDate.of(2016, 12, 1)) == 179)
         assert(dailyTotals(LocalDate.of(2016, 12, 5)) == 81)
