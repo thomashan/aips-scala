@@ -1,9 +1,10 @@
 # aips-scala
 
 ## Run
-The \[input.txt\] is expected to be in the project root.
+Please provide your own input.txt
+The input.txt is expected to be in the project root.
 ```
-./gradlew run --args [input.txt]
+./gradlew run --args input.txt
 ```
 
 ## Assumptions
